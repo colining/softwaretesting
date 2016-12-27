@@ -19,9 +19,26 @@ import util.ImageUtil;
 
 
 public class PlantsMap implements ConstantData {
+	public Plant[][] getPlantsMap() {
+		return plantsMap;
+	}
+
+	public void setPlantsMap(Plant[][] plantsMap) {
+		this.plantsMap = plantsMap;
+	}
+
 	private Plant[][] plantsMap;
 	private SeedCard[] cards;
 	private int bulletX,bulletY;
+
+	public int getTim() {
+		return tim;
+	}
+
+	public void setTim(int tim) {
+		this.tim = tim;
+	}
+
 	int tim=50;
 	public int co = 0;
 	//private AnimateZombie animaZombie;
@@ -53,7 +70,7 @@ public class PlantsMap implements ConstantData {
 	
 	public void updateLocation(AnimateZombie animaZombie) {
 		animaZombie.updateLocation();
-		if(animaZombie.posX>0&&flag[animaZombie.posX][animaZombie.posY]==1)
+		if(animaZombie.posX>0&&flag[animaZombie.posX][animaZombie.posY]==1)		//½©Ê¬ÔÚµØÍ¼ÖÐ
 		{
             if(tim-->0){
 			animaZombie.posX++;

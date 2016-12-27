@@ -16,10 +16,24 @@ public enum PlantType {
 	DoubBullet(null);
 	public int l;
 	private Image plantImg;
-	
+
+
 	PlantType(Image plantImg) {
 		this.plantImg = plantImg;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public Image getPlantImg() {
 		return plantImg;

@@ -14,20 +14,20 @@ public class PlantsBarTest {
 
     }
 
-    @Test
-    public void seedUpdate() throws Exception {
-
-    }
-
-    @Test
-    public void setcd() throws Exception {
-
-    }
-
-    @Test
-    public void getcd() throws Exception {
-
-    }
+//    @Test
+//    public void seedUpdate() throws Exception {
+//
+//    }
+//
+//    @Test
+//    public void setcd() throws Exception {
+//
+//    }
+//
+//    @Test
+//    public void getcd() throws Exception {
+//
+//    }
 
     @Test
     public void selectedPlant() throws Exception {

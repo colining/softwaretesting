@@ -18,6 +18,11 @@ import util.ImageUtil;
 public class GamePlay extends JPanel implements MouseListener, MouseMotionListener, Runnable{	
 	private static final long serialVersionUID = 1L;
 	private PlantsBar plantBar;
+
+	public PlantsMap getPlantMap() {
+		return plantMap;
+	}
+
 	private PlantsMap plantMap;
 	private Image grasslandImage;
 	private Thread gameThread;
@@ -130,7 +135,10 @@ public class GamePlay extends JPanel implements MouseListener, MouseMotionListen
 		//if(plantMap.animaZombieList.get(2)!=null)plantMap.updateLocation(plantMap.animaZombieList.get(2));
 		//if(plantMap.animaZombieList.get(3)!=null)plantMap.updateLocation(plantMap.animaZombieList.get(3));
 		for(int i=0;i<=15;i++)
-		if(plantMap.animaZombieList.get(i)!=null)plantMap.updateLocation(plantMap.animaZombieList.get(i));
+		if(plantMap.animaZombieList.get(i)!=null)
+			plantMap.updateLocation(plantMap.animaZombieList.get(i));
+
+
 		//if(plantMap.animaZombieList.get(1)!=null)plantMap.updateLocation(plantMap.animaZombieList.get(1));
 	
 	}

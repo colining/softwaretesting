@@ -9,13 +9,15 @@ import static org.junit.Assert.*;
  * Created by asus on 2016/12/5.
  */
 public class GamePlayTest {
+    //GamePlay gamePlay;
     @Before
     public void setUp() throws Exception {
+     //gamePlay = new GamePlay();
 
     }
     @Test
     public void doGameOver() throws Exception {
-
+        //gamePlay.getPlantMap().animaZombieList.set(1,)
     }
 
     @Test
