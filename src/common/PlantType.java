@@ -2,6 +2,7 @@ package common;
 
 import java.awt.Image;
 
+
 import util.ImageUtil;
 
 public enum PlantType {
@@ -21,20 +22,6 @@ public enum PlantType {
 	PlantType(Image plantImg) {
 		this.plantImg = plantImg;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	public Image getPlantImg() {
 		return plantImg;
 	}

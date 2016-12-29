@@ -28,8 +28,10 @@ public class PlantsBar implements ConstantData{
 			cards[i] = new SeedCard(
 					new Point(SEED_OFFSET + ADD_SUN_OFFSET + (CARD_WIDTH + CARD_GAP_W) * i, TOP_OFFSET), 
 					new Point(i, 0));
+
 		}
 		//设置阳光值的显示字体和最大值
+
 		lightFont = new Font(Font.DIALOG, Font.BOLD, 20);
 		lights = 100;
 	}
@@ -72,10 +74,12 @@ public class PlantsBar implements ConstantData{
 			for (SeedCard sc : cards) {
 				i = i + 1;
 				if (sc.mouseIn(pos.x, pos.y)) {
-					
+					System.out.println(i);
 					return sc.getPlantType();
+
 				}
 			}
+			System.out.println("dadasd");
 			return PlantType.NONE;
 		} else {
 			return PlantType.NONE;

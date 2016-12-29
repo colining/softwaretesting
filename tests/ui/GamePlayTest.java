@@ -3,6 +3,8 @@ package ui;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.awt.event.MouseEvent;
+
 import static org.junit.Assert.*;
 
 /**
@@ -15,10 +17,10 @@ public class GamePlayTest {
      //gamePlay = new GamePlay();
 
     }
-    @Test
-    public void doGameOver() throws Exception {
-        //gamePlay.getPlantMap().animaZombieList.set(1,)
-    }
+//    @Test
+//    public void doGameOver() throws Exception {
+//        //gamePlay.getPlantMap().animaZombieList.set(1,)
+//    }
 
     @Test
     public void doWin() throws Exception {
@@ -41,17 +43,10 @@ public class GamePlayTest {
 
     }
 
-    @Test
-    public void paintScreen() throws Exception {
-
-    }
-
-
-
-    @Test
-    public void mouseClicked() throws Exception {
-
-    }
+//    @Test
+//    public void mouseClicked() throws Exception {
+//
+//    }
     @Test
     public  void  drawMoveImage() throws  Exception {
         

@@ -13,8 +13,8 @@ public class SeedCard implements ConstantData {
 	private static Image allSeed = ImageUtil.loadImage("allseeds.png");
 	private static Image allSeedDark = ImageUtil.loadImage("allseeds_dark.png");
 	
-	private Point pos;				//整个植物栏
-	private Point coord;			// 植物卡的左上角的点
+	private Point pos;				//整个植物栏             注释有误
+	private Point coord;			// 植物卡的左上角的点，注释有误
 	//private boolean cdok = false;
 	private PlantType plantType;
 	private int[] cdok={0,0,0,0,0,0,0,0,0};
@@ -32,10 +32,10 @@ public class SeedCard implements ConstantData {
 		this.coord = coord;
 		plantType = seedMap[coord.y][coord.x];   //得到相应的植物类型对象   
 		percent = .5f;       //设置植物列表刷新的节奏
-		
 		initFreezingTime(plantType);   //设置每种植物不可用时间
 		count = 0;
 	}
+
 	public int recd(){
 		return count;
 	}

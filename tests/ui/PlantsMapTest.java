@@ -79,10 +79,10 @@ public class PlantsMapTest  implements ConstantData {
 
     }
 
-    @Test
-    public void putPlantInMap() throws Exception {
-
-    }
+//    @Test
+//    public void putPlantInMap() throws Exception {
+//
+//    }
 
     @Test
     public void isPutPlant() throws Exception {
