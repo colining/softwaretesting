@@ -51,9 +51,7 @@ public class PlantsBarTest {
         Point eat = new Point(406,10);
        // Point eat = new Point(407,10);
         assertTrue(plantsBar.selectedPlant(eat)==PlantType.Eat);
-
         //Point doublebulet = new Point(459,10);
-
        // assertTrue(plantsBar.selectedPlant(doublebulet)==PlantType.DoubBullet);
 
 

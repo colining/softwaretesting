@@ -99,7 +99,7 @@ public class PlantsMap implements ConstantData {
 	public void drawPlant(Graphics g) {	
 		co = 0;
 		for (int i = 0; i < MAP_COL; ++i) {
-			for (int j = 0; j < MAP_ROW; ++j) {
+			for (int j = 0; j < MAP_ROW; ++j) {			//jÎªÐÐ
 				int x = MAP_WEST_OFFSET + i * MAP_RECT_WIDTH;
 				int y = MAP_TOP_OFFSET + j * MAP_RECT_HEIGHT;
 				
@@ -144,7 +144,7 @@ public class PlantsMap implements ConstantData {
 						int zombieX = animaZombieList.get(t).posX;
 						System.out.println(zombieY);
 						//bulletImg = null;
-						if(bulletY-zombieY<ConstantData.Normal_Zombie_HEIGHT&&animaZombieList.get(t).isVisible==1&&animaZombieList.get(t).posY==te){
+						if(animaZombieList.get(t).isVisible==1&&animaZombieList.get(t).posY==te){
 							//p.doCollision(bulletX, bulletY, zombieX, zombieY);
 							gg = tt;
 							if(p.getissun()==false)

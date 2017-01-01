@@ -23,7 +23,7 @@ public class PlantsMapTest  implements ConstantData {
     }
 
     @Test
-    public void updateLocation() throws Exception {     //´ý²â
+    public void updateLocation() throws Exception {
     //AnimateZombie animateZombie = new AnimateZombie(100,50,1);
 //        flag[animateZombie.posX][animateZombie.posY]=1;
 //        plantsMap.setTim(2);
@@ -64,19 +64,14 @@ public class PlantsMapTest  implements ConstantData {
     public void inTheMap() throws Exception {   //32~761 82~572
         assertTrue(plantsMap.inTheMap(200,200));
         assertFalse(plantsMap.inTheMap(20,20));
-        //
         assertFalse(plantsMap.inTheMap(32,200));
         assertTrue(plantsMap.inTheMap(33,200));
         assertFalse(plantsMap.inTheMap(761,200));
         assertTrue(plantsMap.inTheMap(760,200));
-
         assertFalse(plantsMap.inTheMap(33,82));
         assertTrue(plantsMap.inTheMap(33,83));
         assertFalse(plantsMap.inTheMap(33,572));
         assertTrue(plantsMap.inTheMap(33,571));
-
-
-
     }
 
 //    @Test

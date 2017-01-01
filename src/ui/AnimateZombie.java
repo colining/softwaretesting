@@ -29,9 +29,10 @@ public class AnimateZombie implements ConstantData  {			//½©Ê¬µÄ¶¯»­
 	}
 	public int doCollision(int bulletX,int bulletY,int zombieX,int zombieY,int a){
 		//int gg = 0;
-		if(zombieX-bulletX>0&&zombieX-bulletX<10){//&&bulletY-zombieY<ConstantData.Normal_Zombie_HEIGHT){	
-			hp = hp + 1;
-			System.out.println(hp);
+		//if(zombieX-bulletX>0&&zombieX-bulletX<10){//&&bulletY-zombieY<ConstantData.Normal_Zombie_HEIGHT){
+			if (bulletX>zombieX){
+		hp = hp + 1;
+			//System.out.println(hp);
 			return hp;
 		}
 		return 0;
